@@ -3,17 +3,20 @@
     padding: 0;
     list-style: none;
 }
+body {
+    background-color:#767676;
+}
 .container {
     width: 980px;
     height: inherit;
-    background: rgba(0,0,0,0.3);
+    background: #fff;
     margin: 0 auto;
 }
 /* 헤더 */
 .header {
     width: 100%;
     /* height: 300px; */
-    background: red;
+    /* background: red; */
 }
 .header .logo {
     padding-top: 85px;
@@ -29,7 +32,7 @@
 /* 메인 */
 .main {
     width: 100%;
-    background: chartreuse;
+    /* background: chartreuse; */
 }
 .main .main_wrap {
     padding-top: 10px;
@@ -42,6 +45,7 @@
     display: block;
     text-align: right;
     text-decoration: none;
+    color: #111;
 }
 .main .login_bar {
     padding-top: 10px;
@@ -55,9 +59,14 @@
     width: 360px;
     height: 20px;
     padding: 8px 44px 12px 10px;
-    border: 1px;
+    border: 1px solid #767676;
     outline: none;
     font-size: 16px;
+}
+.main .login_bar .login_id input:focus,
+.main .login_bar .login_psw input:focus {
+    border: 2px solid skyblue;
+    background-color: rgba(119, 219, 255, 0.055);
 }
 .main .login_bar .login_id input {
     margin-bottom: 5px;
@@ -120,7 +129,7 @@
 }
 /* 푸터 */
 .footer {
-    background: skyblue;
+    /* background: skyblue; */
 }
 .footer .line {
     border-bottom: 1px solid #666;
@@ -129,6 +138,7 @@
 .footer .service {
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 60px;
 }
 .footer .service a {
     display: inline-block;
